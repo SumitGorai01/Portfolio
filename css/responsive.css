@@ -1,0 +1,63 @@
+/* Default styles */
+
+/* Responsive styles for devices up to 768px width */
+@media only screen and (max-width: 768px) {
+  html{
+    font-size: 45%;
+  }
+  
+  .home-content {
+      padding: 2rem;
+  }
+  .about {
+      padding: 2remx;
+  }
+}
+
+/* Responsive styles for devices between 768px and 1024px width */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html{
+    font-size: 55%;
+  }
+  .home-content {
+      padding: 30px;
+  }
+  .about {
+      padding: 30px;
+  }
+}
+
+/* Responsive styles for devices above 1024px width */
+@media only screen and (min-width: 1025px) {
+  html{
+    font-size: 65%;
+  }
+  .home-content {
+      padding: 40px;
+  }
+  .about {
+      padding: 40px;
+  }
+}
+
+
+/* Example: Responsive styles for devices between 481px and 768px width */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  html{
+    font-size: 65%;
+  }
+  .navbar {
+      /* Example adjustment */
+      font-size: 14px;
+  }
+}
+
+/* Example: Responsive styles for devices between 320px and 480px width */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  html{
+    font-size: 55%;
+  }
+  .navbar {
+      font-size: 12px;
+  }
+}
