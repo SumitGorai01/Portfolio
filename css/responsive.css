@@ -179,10 +179,10 @@
   }
   .about {
     padding: 0px;
-    padding-top: 40px;
+    padding-top: 4rem;
   }
   button {
-    width: 8rem;
+    width: 10rem;
     font-size: 1rem;
   }
   .home .mypic {
@@ -252,18 +252,6 @@
   flex: 1;
 }
 
-/* Responsive styles for different screen sizes */
-@media (max-width: 576px) {
-  .sub-title {
-    font-size: 3rem;
-    margin-top: 5rem;
-  }
-  .contact-text,
-  .contact-form {
-    width: 100%;
-  }
-}
-
 @media (min-width: 577px) and (max-width: 767px) {
   .sub-title {
     font-size: 2rem;
@@ -287,10 +275,7 @@
 }
 
 @media (min-width: 992px) {
-  .sub-title {
-    /* font-size: 5rem; */
-    /* margin-top: 15rem; */
-  }
+ 
   .contact-text {
     width: 60%;
   }
@@ -301,23 +286,28 @@
 
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 576px) {
-  .project-list {
+  .home {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
   }
-  .proj-list-container {
-    flex-direction: column;
+  .home-sci span {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .mypic img {
+    /* margin: 15rem; */
+    max-width: 30rem;
+    max-height: 30rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    
+  }
+  button{
     align-items: center;
-  }
-  .proj-img {
-    margin-bottom: 20px;
-  }
-  .overlay {
-    bottom: 0;
-  }
-  .proj-name {
-    font-size: 1.5rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    
   }
   .about {
     display: flex;
@@ -325,6 +315,7 @@
     flex-direction: column-reverse;
     align-items: center;
     margin: 0;
+    padding: 0;
   }
   .about-text {
     margin-left: 2rem;
@@ -334,13 +325,69 @@
     /* padding-right: 2rem; */
     text-align: justify;
   }
-  .home {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column-reverse;
+  .about-img img{
+    align-items: center;
+   
   }
-  .home-sci span {
-    font-size: 2rem;
-    margin-bottom: 0;
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .proj-list-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .proj-img { 
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .overlay {
+    bottom: 0;
+  }
+  .proj-name {
+    font-size: 1.5rem;
+  }
+  .sub-title {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+ 
+  .contact-text,
+  .contact-form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .service{
+    margin: 0;
+    padding: 0;
+  }
+ .container{
+    margin: 0;
+    padding: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    
+  }
+  .contact{
+    align-items: center;
+    /* margin: 0; */
+    padding-left: 5rem;  
+    justify-content: center;
+
+  }
+  .copyright{
+    font-size: 1.5rem;
+  }
+  section{
+    margin: 0;
+    padding: 0;
   }
 }

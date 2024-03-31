@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.8rem 6%;
+  padding: 0.8rem 10%;
   background: #051125;
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-right: 2.7rem;
+  margin-right: 2.5rem;
   transition: 0.3s;
   opacity: 0;
   animation: slideTop .5s ease forwards;
@@ -102,7 +102,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 56pxpx;
+  font-size: 5.6rem;
   font-weight: 700;
   margin: -0.3rem 0;
   margin-top: 2rem;
@@ -1057,6 +1057,8 @@ form textarea {
   }
 }
 section{
+  margin-left: 5rem;
+  margin-right: 5rem;
   /* margin-top: 5rem;
   margin-bottom: 5rem; */
   /* padding-top: 5rem;
