@@ -1,63 +1,346 @@
-/* Default styles */
+/* Original styles */
 
-/* Responsive styles for devices up to 768px width */
-@media only screen and (max-width: 768px) {
-  html{
-    font-size: 45%;
+/* Adjustments for smaller screens */
+@media screen and (max-width: 1115px) {
+  .home .mypic {
+    width: 500px;
+    height: 400px;
   }
-  
-  .home-content {
-      padding: 2rem;
+  .home .home-content {
+    font-size: 3rem;
+    margin: auto;
+    padding: 3.5rem;
+  }
+  .home-content .btns {
+    width: 80%;
+  }
+  button {
+    width: 15rem;
+    font-size: 2rem;
+  }
+  .home .mypic {
+    height: auto;
+    width: auto;
+  }
+  .about .about-content {
+    padding: 1.5rem;
+  }
+  .about .about-image {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .prof .prof-skills {
+    width: 100%;
+    margin-right: 10rem;
+  }
+  .skill-content {
+    grid-column-gap: 0px;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 1009px) {
+  .home .home-content {
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+  .home .mypic {
+    height: auto;
+    width: auto;
+  }
+  .proj-img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 1390px;
+  }
+  .home .home-content {
+    padding: 0rem;
+    margin-right: auto;
+  }
+  .home-content .btns {
+    width: 90%;
+  }
+  button {
+    width: 12rem;
+    font-size: 1.2rem;
+  }
+  .home .mypic {
+    margin: auto;
+  }
+  .about .about-content {
+    width: 90%;
+  }
+  .about-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .skills {
+    height: 1100px;
+  }
+  .skills .skill-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .prof {
+    margin-top: 2rem;
+  }
+  .prof .prof-skills {
+    width: 75%;
+  }
+  .skill-content:hover .skill-bar .bar span::before {
+    animation-play-state: paused;
+  }
+  .skill-content:hover .box {
+    animation-play-state: paused;
+  }
+  .skill-content .tech:hover .skill-bar .bar span::before {
+    animation-play-state: running;
+  }
+  .prof:hover .box {
+    animation-play-state: running;
+  }
+  .item {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .home {
+    height: 1300px;
+  }
+  .home .home-content {
+    margin-bottom: 0rem;
+  }
+  .proj-img {
+    width: calc(100% / 1);
+  }
+  .nav-bar .hamburg-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .home {
+    height: 1250px;
+  }
+  button {
+    width: 9rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .home {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+  }
+  .home-sci span {
+    font-size: 2rem;
+  }
+  .prof .prof-skills {
+    width: 90%;
+    margin-right: 10rem;
+  }
+  .prof {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10rem;
+  }
+  .prof .outer-circle {
+    height: 8rem;
+    width: 8rem;
+  }
+  .prof .inner-circle {
+    height: 7rem;
+    width: 7rem;
+    margin: 0.5rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .skills .skill-content {
+    margin-top: 2rem;
+  }
+  .skill-bar {
+    margin: 0 2rem 1.2rem 2rem;
   }
   .about {
-      padding: 2remx;
+    padding: 0px;
+    padding-top: 40px;
+  }
+  button {
+    width: 8rem;
+    font-size: 1rem;
+  }
+  .home .mypic {
+    height: 100%;
+    width: 100%;
   }
 }
 
-/* Responsive styles for devices between 768px and 1024px width */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  html{
-    font-size: 55%;
+@media screen and (max-width: 400px) {
+  .home-content .email {
+    font-size: 1rem;
   }
-  .home-content {
-      padding: 30px;
+  .home-content .btns {
+    width: 80%;
+  }
+  button {
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .home {
+    height: 1000px;
+    margin-top: 2rem;
+  }
+  .prof .prof-skills {
+    width: 100%;
+  }
+  .home .mypic {
+    height: 400px;
+    width: 400px;
+  }
+  .nav-bar {
+    padding: 0rem;
+  }
+  .skills {
+    height: 1500px;
+  }
+  .prof .outer-circle {
+    height: 10rem;
+    width: 10rem;
+  }
+  .prof .inner-circle {
+    height: 8rem;
+    width: 8rem;
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .project {
+    margin: 1rem;
+  }
+  .skill-name {
+    font-size: 0.8rem;
+  }
+}
+
+/* Base styles for all screen sizes */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 576px) {
+  .sub-title {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+  .contact-text,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .sub-title {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .contact-text,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sub-title {
+    font-size: 2.5rem;
+    margin-top: 10rem;
+  }
+  .contact-text,
+  .contact-form {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-title {
+    /* font-size: 5rem; */
+    /* margin-top: 15rem; */
+  }
+  .contact-text {
+    width: 60%;
+  }
+  .contact-form {
+    width: 50%;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 576px) {
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .proj-list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-img {
+    margin-bottom: 20px;
+  }
+  .overlay {
+    bottom: 0;
+  }
+  .proj-name {
+    font-size: 1.5rem;
   }
   .about {
-      padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
   }
-}
-
-/* Responsive styles for devices above 1024px width */
-@media only screen and (min-width: 1025px) {
-  html{
-    font-size: 65%;
+  .about-text {
+    margin-left: 2rem;
+    margin-right: 0em;
+    align-items: center;
+    padding-left: 2rem;
+    /* padding-right: 2rem; */
+    text-align: justify;
   }
-  .home-content {
-      padding: 40px;
+  .home {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
   }
-  .about {
-      padding: 40px;
-  }
-}
-
-
-/* Example: Responsive styles for devices between 481px and 768px width */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  html{
-    font-size: 65%;
-  }
-  .navbar {
-      /* Example adjustment */
-      font-size: 14px;
-  }
-}
-
-/* Example: Responsive styles for devices between 320px and 480px width */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  html{
-    font-size: 55%;
-  }
-  .navbar {
-      font-size: 12px;
+  .home-sci span {
+    font-size: 2rem;
+    margin-bottom: 0;
   }
 }

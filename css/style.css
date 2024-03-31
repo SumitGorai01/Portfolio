@@ -4,6 +4,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'poppins', sans-serif;
+  /* background-color: #081b29; */
+
 }
 
 html {
@@ -252,8 +254,9 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   /* margin-bottom: 2em; */
+  margin-right: 8rem;
 }
 
 .about-img img {
@@ -293,6 +296,9 @@ button:hover {
   margin-bottom: 2rem;
   margin-right: 5rem;
 }
+.about-text{
+  text-align: justify;
+}
 
 /* about us */
 
@@ -307,7 +313,9 @@ button:hover {
 .sub-title {
   text-align: center;
   font-size: 6rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
+  margin-bottom: 8rem;
+  margin-top: 5rem;
 
 }
 
@@ -316,7 +324,8 @@ button:hover {
 }
 
 .container {
-  padding: 9rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 
 .services-list {
@@ -486,32 +495,6 @@ button:hover {
   box-shadow: 0px 0px 40px aqua;
 }
 
-#prev-btn,
-#next-btn {
-  height: 4rem;
-  width: 4rem;
-  color: white;
-  box-shadow: 0px 0px 20px aqua;
-  background-color: black;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  /* Vertically center the arrows */
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-#prev-btn {
-  left: .8rem;
-}
-
-#next-btn {
-  margin-right: 0.5rem;
-  right: .8rem;
-}
 
 
 /*project*/
@@ -802,16 +785,16 @@ button:hover {
 }
 
 .contact-text h4 {
-  margin: 15px 0;
+  margin: 1.5rem 0;
   color: rgb(224, 236, 236);
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
 .contact-text p {
   color: rgb(177, 177, 177);
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -820,16 +803,17 @@ button:hover {
 }
 
 .contact-list li {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   display: block;
-  padding-right: 10px;
+  padding-right: 1rem;
+  font-size: 2rem;
 }
 
 .contact-list li i {
   display: inline-block;
-  padding-right: 20px;
+  padding-right: 2rem;
   color: #0ef;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   transition: all .4s ease;
 }
@@ -848,11 +832,11 @@ button:hover {
   background: transparent;
   border: 2px solid #0ef;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 2rem;
   color: #0ef;
   text-decoration: none;
   ;
-  margin: 10px 10px 30px 0;
+  margin: 1rem 1rem 3rem 0;
   transition: .5s ease;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
@@ -874,7 +858,7 @@ form textarea {
   border: none;
   outline: none;
   width: 90%;
-  padding: 18px;
+  padding: 1.8rem;
   background: rgb(229, 220, 220);
   color: #000;
   font-weight: 600;
@@ -923,7 +907,7 @@ form textarea {
 
 .copyright {
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   margin-top: .5em;
   margin-bottom: .5em;
   padding: auto;
@@ -1071,4 +1055,14 @@ form textarea {
 
     }
   }
+}
+section{
+  /* margin-top: 5rem;
+  margin-bottom: 5rem; */
+  /* padding-top: 5rem;
+  padding-bottom: 3rem; */
+}
+.project{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }

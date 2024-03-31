@@ -7,6 +7,7 @@
     <title>Sumit Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -15,60 +16,64 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo"><span>Port</span>Folio</a>
-        <nav class="navbar">
-            <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#project" style="--i:3">Project</a>
-            <a href="#skills" style="--i:4">Skills</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
-    </header>
 
+    <section>
+        <header class="header">
+            <a href="#" class="logo"><span>Port</span>Folio</a>
+            <nav class="navbar">
+                <a href="#home" style="--i:1" class="active">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#project" style="--i:3">Project</a>
+                <a href="#skills" style="--i:4">Skills</a>
+                <a href="#contact" style="--i:5">Contact</a>
+            </nav>
+        </header>
+    </section>
 
-    <!-- Home Section -->
-    <div class="home" id="home">
+    <section>
+        <!-- Home Section -->
+        <div class="home" id="home">
 
-        <div class="home-content">
-            <h3>Hello ! I'm</h3>
-            <h1>Sumit Gorai</h1>
-            <h3>And I'm a <span class="text"></span> </h3>
-            <p>I'm a Java developer with extensive experience in backend development.<br>My expertise lies in creating
-                and designing robust software solutions.</p>
-            <div class="email">
-                Email:
-                <span>goraisumit01@gmail.com</span>
+            <div class="home-content">
+                <h3>Hello ! I'm</h3>
+                <h1>Sumit Gorai</h1>
+                <h3>And I'm a <span class="text"></span> </h3>
+                <p>I'm a Java developer with extensive experience in backend development.<br>My expertise lies in
+                    creating
+                    and designing robust software solutions.</p>
+                <div class="email">
+                    Email:
+                    <span>goraisumit01@gmail.com</span>
+                </div>
+                <div class="btns">
+                    <a href="assests/Sumit Resume .pdf" download><button class="download-btn" style="--i:6">Download
+                            CV</button></a>
+                    <a href="#contact"><button style="--i:7">Hire Me!</button></a>
+                </div>
+
             </div>
-            <div class="btns">
-                <a href="assests/Sumit Resume .pdf" download><button class="download-btn" style="--i:6">Download
-                        CV</button></a>
-                <a href="#contact"><button style="--i:7">Hire Me!</button></a>
+            <div class="mypic">
+                <img src="assests/sumitPic1.jpg" alt="myimage" style="--i:1" />
+                <div class="home-sci">
+                    <span>Follow me : </span>
+                    <a href="https://www.facebook.com/profile.php?id=61557094676871" target="_blank" style="--i:2"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/SumitGorai01" target="_blank" style="--i:3"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sumit-gorai-a04240250/" target="_blank" style="--i:4"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-
         </div>
-        <div class="mypic">
-            <img src="assests/sumitPic1.jpg" alt="myimage" style="--i:1" />
-            <div class="home-sci">
-                <span>Follow me : </span>
-                <a href="https://www.facebook.com/profile.php?id=61557094676871" target="_blank" style="--i:2"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a href="https://github.com/SumitGorai01" target="_blank" style="--i:3"><i
-                        class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sumit-gorai-a04240250/" target="_blank" style="--i:4"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-
+    </section>
     <!-- About section -->
+    <h2 class="sub-title">About <span>Me</span> </h2>
     <section class="about" id="about">
         <div class="about-img">
 
             <img src="assests/Man thinking.gif" alt="aboutPic">
         </div>
         <div class="about-text">
-            <h2>About <span>Me</span> </h2>
             <h4>Full Stack Developer</h4>
             <p>I'm Sumit Gorai, a Full Stack Developer with focus on backend development. I specialize in crafting
                 intuitive front-end interfaces using Angular , while also excelling in building scalable back-end
@@ -83,8 +88,8 @@
 
     <section>
         <div class="services" id="services">
+            <h1 class="sub-title">My <span>Services</span></h1>
             <div class="container">
-                <h1 class="sub-title">My <span>Services</span></h1>
                 <div class="services-list">
                     <div class="read">
                         <i class="fa-solid fa-code" style="color: #00eeef;"></i>
@@ -202,150 +207,150 @@
         </div>
 
     </section>
-
-    <div class="skills" id="skills">
-        <h1 class="sub-title">My <span>Skills</span> </h1>
-        <div class="skill-content">
-            <div class="tech">
-                <h1 style="margin-bottom: 1.5rem">Technical Skills</h1>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p> <i class="fa-brands fa-html5" style="color: orangered;"></i> HTML</p>
-                        <p>90%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="html"></span>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p><i class="fa-brands fa-css3-alt" style="color: yellow;"></i> CSS</p>
-                        <p>80%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="css"></span>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p><i class="fa-brands fa-js" style="color: #fff205;"></i> JavaScript</p>
-                        <p>75%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="js"></span>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p><i class="fa-brands fa-java" style="color: white;"></i> Java</p>
-                        <p>90%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="java"></span>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p><i class="fa-solid fa-laptop" style="color: rgb(50, 222, 20);"></i> Backend Developer</p>
-                        <p>85%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="backend"></span>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="info">
-                        <p><i class="fa-solid fa-database" style="color: rgb(21, 28, 211);"></i> Database</p>
-                        <p>83%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="db"></span>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p><i class="fa-solid fa-code"></i> Others Tech</p>
-                        <p>70%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="others"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="prof">
-                <h1 style="margin-bottom: 1.5rem">Professional Skills</h1>
-                <div class="prof-skills">
-
-                    <div class="outer-circle">
-                        <div class="inner-circle">
-                            <div class="skill-name">Backend Developer</div>
+    <section>
+        <div class="skills" id="skills">
+            <h1 class="sub-title">My <span>Skills</span> </h1>
+            <div class="skill-content">
+                <div class="tech">
+                    <h1 style="margin-bottom: 1.5rem">Technical Skills</h1>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p> <i class="fa-brands fa-html5" style="color: orangered;"></i> HTML</p>
+                            <p>90%</p>
                         </div>
-                        <div class="box box-top-left"></div>
-                        <div class="box box-bottom-left"></div>
-                        <div class="box box-bottom-right"></div>
-                        <div class="box box-top-right"></div>
+                        <div class="bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p><i class="fa-brands fa-css3-alt" style="color: yellow;"></i> CSS</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p><i class="fa-brands fa-js" style="color: #fff205;"></i> JavaScript</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="js"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p><i class="fa-brands fa-java" style="color: white;"></i> Java</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="java"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p><i class="fa-solid fa-laptop" style="color: rgb(50, 222, 20);"></i> Backend Developer</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="backend"></span>
+                        </div>
                     </div>
 
-                    <div class="outer-circle">
-                        <div class="inner-circle">
-                            <div class="skill-name">Critical Thinking</div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p><i class="fa-solid fa-database" style="color: rgb(21, 28, 211);"></i> Database</p>
+                            <p>83%</p>
                         </div>
-                        <div class="box box-top-left"></div>
-                        <div class="box box-bottom-left"></div>
-                        <div class="box box-bottom-right"></div>
-                        <div class="box box-top-right"></div>
+                        <div class="bar">
+                            <span class="db"></span>
+                        </div>
                     </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p><i class="fa-solid fa-code"></i> Others Tech</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="others"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="prof">
+                    <h1 style="margin-bottom: 1.5rem">Professional Skills</h1>
+                    <div class="prof-skills">
 
-                    <div class="outer-circle">
-                        <div class="inner-circle">
-                            <div class="skill-name">Quick Learner</div>
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <div class="skill-name">Backend Developer</div>
+                            </div>
+                            <div class="box box-top-left"></div>
+                            <div class="box box-bottom-left"></div>
+                            <div class="box box-bottom-right"></div>
+                            <div class="box box-top-right"></div>
                         </div>
-                        <div class="box box-top-left"></div>
-                        <div class="box box-bottom-left"></div>
-                        <div class="box box-bottom-right"></div>
-                        <div class="box box-top-right"></div>
-                    </div>
-                    <div class="outer-circle">
-                        <div class="inner-circle">
-                            <div class="skill-name">Problem Solving</div>
+
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <div class="skill-name">Critical Thinking</div>
+                            </div>
+                            <div class="box box-top-left"></div>
+                            <div class="box box-bottom-left"></div>
+                            <div class="box box-bottom-right"></div>
+                            <div class="box box-top-right"></div>
                         </div>
-                        <div class="box box-top-left"></div>
-                        <div class="box box-bottom-left"></div>
-                        <div class="box box-bottom-right"></div>
-                        <div class="box box-top-right"></div>
-                    </div>
-                    <div class="outer-circle">
-                        <div class="inner-circle">
-                            <div class="skill-name">Team Work</div>
+
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <div class="skill-name">Quick Learner</div>
+                            </div>
+                            <div class="box box-top-left"></div>
+                            <div class="box box-bottom-left"></div>
+                            <div class="box box-bottom-right"></div>
+                            <div class="box box-top-right"></div>
                         </div>
-                        <div class="box box-top-left"></div>
-                        <div class="box box-bottom-left"></div>
-                        <div class="box box-bottom-right"></div>
-                        <div class="box box-top-right"></div>
-                    </div>
-                    <div class="outer-circle">
-                        <div class="inner-circle">
-                            <div class="skill-name">Communication Skills</div>
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <div class="skill-name">Problem Solving</div>
+                            </div>
+                            <div class="box box-top-left"></div>
+                            <div class="box box-bottom-left"></div>
+                            <div class="box box-bottom-right"></div>
+                            <div class="box box-top-right"></div>
                         </div>
-                        <div class="box box-top-left"></div>
-                        <div class="box box-bottom-left"></div>
-                        <div class="box box-bottom-right"></div>
-                        <div class="box box-top-right"></div>
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <div class="skill-name">Team Work</div>
+                            </div>
+                            <div class="box box-top-left"></div>
+                            <div class="box box-bottom-left"></div>
+                            <div class="box box-bottom-right"></div>
+                            <div class="box box-top-right"></div>
+                        </div>
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <div class="skill-name">Communication Skills</div>
+                            </div>
+                            <div class="box box-top-left"></div>
+                            <div class="box box-bottom-left"></div>
+                            <div class="box box-bottom-right"></div>
+                            <div class="box box-top-right"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
+    </section>
     <section>
 
         <h1 class="sub-title">Contact <span>Me</span></h1>
         <div class="contact" id="contact">
             <div class="contact-text">
                 <h4>Let's Work Together</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ea. Lorem ipsum dolor sit amet
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ea. <br>Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Cupiditate, similique.</p>
                 <div class="contact-list">
                     <li><i class="fa-solid fa-paper-plane" style="color: #63E6BE;"></i>goraisumit01@gmail.com</li>
@@ -361,6 +366,9 @@
                     <a href="mailto:goraisumit01@gmail.com" target="_blank" style="--i:4"><i
                             class="fa-regular fa-envelope"></i></a>
                 </div>
+                <div>
+                    <h1>Connect Me On : </h1>
+                </div>
             </div>
 
             <div class="contact-form">
@@ -368,7 +376,7 @@
                     <input type="text" placeholder="Enter Your Name..." required style="--i:1">
                     <input type="email" placeholder="Enter Your Email..." required style="--i:2">
                     <input type="text" placeholder="Enter Your Subject..." required style="--i:3">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message.."
+                    <textarea name="" id="" cols="30" rows="8" placeholder="Enter Your Message.."
                         style="--i:4"></textarea>
                     <div class="btns">
                         <button type="submit" style="--i:5">Submit</button>
@@ -380,13 +388,12 @@
     </section>
 
     <hr>
-    <section>
         <footer>
             <div class="copyright">
                 <p>Copyright &copy; 2024 | <a href="">Made with <span>❤</span> By Sumit Gorai</a> </p>
             </div>
         </footer>
-    </section>
+    
     <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="js/script.js"></script>
 </body>
