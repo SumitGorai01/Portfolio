@@ -150,7 +150,7 @@ body {
 @media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
-    position: absolute;
+    /* position: absolute; */
     right: 0px;
     top: 0px;
   }
