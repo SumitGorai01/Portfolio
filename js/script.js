@@ -22,9 +22,28 @@ function sendEmail() {
         Subject: "From Protfolio ",
         Body: "Name : "+document.getElementById("name").value
                     +"<br> Email : " +document.getElementById("email").value
+                    +"<br> Subject : " +document.getElementById("subject").value
                     +"<br> Message : " +document.getElementById("message").value
                     
     }).then(
-        message => alert("Message Sent Successfully")
+        message =>{
+            if(message == 'OK'){
+                Swal.fire({
+                    title: "Success",
+                    text: "Message Sent Successfully",
+                    icon: "success",
+                    showConfirmButton: true,  
+                    timer: 3000
+                  });
+            }else{
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    showConfirmButton: false,
+                    timer: 3000                    
+                  });
+            }
+        }
     );
 }
