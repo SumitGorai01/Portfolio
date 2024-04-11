@@ -612,3 +612,156 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 396px) {
+  .home {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+  }
+
+  .home-sci span {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .home-content h1 {
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 3rem;
+      width: 3rem;
+      z-index: 100;
+    }
+
+    div {
+      position: relative;
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+      /* margin: 0 0.2rem; */
+      border-radius: 10px;
+      box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+        4px 4px 6px rgba(0, 0, 0, 0.2),
+        inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+        inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .mypic img {
+    /* margin: 15rem; */
+    max-width: 30rem;
+    max-height: 30rem;
+    margin-top: 10rem;
+    /* margin-bottom: rem; */
+
+  }
+
+  button {
+    align-items: center;
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.3rem;
+
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-text {
+    margin-left: 2rem;
+    margin-right: 0em;
+    align-items: center;
+    padding-left: 2rem;
+    /* padding-right: 2rem; */
+    text-align: justify;
+  }
+
+  .about-img img {
+    align-items: center;
+
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .proj-list-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .proj-img {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .overlay {
+    bottom: 0;
+  }
+
+  .proj-name {
+    font-size: 1.5rem;
+  }
+
+  .sub-title {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+
+  .contact-text,
+  .contact-form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .service {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+
+  }
+
+  .contact {
+    align-items: center;
+    /* margin: 0; */
+    padding-left: 5rem;
+    justify-content: center;
+
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+}
