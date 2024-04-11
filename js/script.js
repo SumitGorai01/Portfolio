@@ -47,3 +47,24 @@ function sendEmail() {
         }
     );
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var bottomToTopBtn = document.getElementById('bottomToTopBtn');
+  
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 100) {
+        bottomToTopBtn.style.display = 'block';
+      } else {
+        bottomToTopBtn.style.display = 'none';
+      }
+    });
+  
+    bottomToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+  

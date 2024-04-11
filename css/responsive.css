@@ -6,25 +6,31 @@
     width: 500px;
     height: 400px;
   }
+
   .home .home-content {
     font-size: 3rem;
     margin: auto;
     padding: 3.5rem;
   }
+
   .home-content .btns {
     width: 80%;
   }
+
   button {
     width: 15rem;
     font-size: 2rem;
   }
+
   .home .mypic {
     height: auto;
     width: auto;
   }
+
   .about .about-content {
     padding: 1.5rem;
   }
+
   .about .about-image {
     margin: auto;
   }
@@ -35,6 +41,7 @@
     width: 100%;
     margin-right: 10rem;
   }
+
   .skill-content {
     grid-column-gap: 0px;
     margin-bottom: 200px;
@@ -47,10 +54,12 @@
     margin-top: 3rem;
     margin-bottom: 0rem;
   }
+
   .home .mypic {
     height: auto;
     width: auto;
   }
+
   .proj-img {
     width: calc(100% / 2);
   }
@@ -62,23 +71,29 @@
     align-items: center;
     height: 1390px;
   }
+
   .home .home-content {
     padding: 0rem;
     margin-right: auto;
   }
+
   .home-content .btns {
     width: 90%;
   }
+
   button {
     width: 12rem;
     font-size: 1.2rem;
   }
+
   .home .mypic {
     margin: auto;
   }
+
   .about .about-content {
     width: 90%;
   }
+
   .about-image {
     display: none;
   }
@@ -88,27 +103,35 @@
   .skills {
     height: 1100px;
   }
+
   .skills .skill-content {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .prof {
     margin-top: 2rem;
   }
+
   .prof .prof-skills {
     width: 75%;
   }
+
   .skill-content:hover .skill-bar .bar span::before {
     animation-play-state: paused;
   }
+
   .skill-content:hover .box {
     animation-play-state: paused;
   }
+
   .skill-content .tech:hover .skill-bar .bar span::before {
     animation-play-state: running;
   }
+
   .prof:hover .box {
     animation-play-state: running;
   }
+
   .item {
     width: 80%;
   }
@@ -118,12 +141,15 @@
   .home {
     height: 1300px;
   }
+
   .home .home-content {
     margin-bottom: 0rem;
   }
+
   .proj-img {
     width: calc(100% / 1);
   }
+
   .nav-bar .hamburg-menu {
     display: block;
   }
@@ -133,6 +159,7 @@
   .home {
     height: 1250px;
   }
+
   button {
     width: 9rem;
     font-size: 1rem;
@@ -145,13 +172,16 @@
     flex-wrap: nowrap;
     flex-direction: column-reverse;
   }
+
   .home-sci span {
     font-size: 2rem;
   }
+
   .prof .prof-skills {
     width: 90%;
     margin-right: 10rem;
   }
+
   .prof {
     margin: 0;
     padding: 0;
@@ -159,32 +189,40 @@
     flex-wrap: wrap;
     padding-right: 10rem;
   }
+
   .prof .outer-circle {
     height: 8rem;
     width: 8rem;
   }
+
   .prof .inner-circle {
     height: 7rem;
     width: 7rem;
     margin: 0.5rem;
   }
+
   h1 {
     font-size: 1.6rem;
   }
+
   .skills .skill-content {
     margin-top: 2rem;
   }
+
   .skill-bar {
     margin: 0 2rem 1.2rem 2rem;
   }
+
   .about {
     padding: 0px;
     padding-top: 4rem;
   }
+
   button {
     width: 10rem;
     font-size: 1rem;
   }
+
   .home .mypic {
     height: 100%;
     width: 100%;
@@ -195,9 +233,11 @@
   .home-content .email {
     font-size: 1rem;
   }
+
   .home-content .btns {
     width: 80%;
   }
+
   button {
     width: 7rem;
     font-size: 0.8rem;
@@ -209,34 +249,43 @@
     height: 1000px;
     margin-top: 2rem;
   }
+
   .prof .prof-skills {
     width: 100%;
   }
+
   .home .mypic {
     height: 400px;
     width: 400px;
   }
+
   .nav-bar {
     padding: 0rem;
   }
+
   .skills {
     height: 1500px;
   }
+
   .prof .outer-circle {
     height: 10rem;
     width: 10rem;
   }
+
   .prof .inner-circle {
     height: 8rem;
     width: 8rem;
     margin: 1rem;
   }
+
   h1 {
     font-size: 1.5rem;
   }
+
   .project {
     margin: 1rem;
   }
+
   .skill-name {
     font-size: 0.8rem;
   }
@@ -257,6 +306,7 @@
     font-size: 2rem;
     margin-top: 5rem;
   }
+
   .contact-text,
   .contact-form {
     width: 100%;
@@ -268,6 +318,7 @@
     font-size: 2.5rem;
     margin-top: 10rem;
   }
+
   .contact-text,
   .contact-form {
     width: 50%;
@@ -275,10 +326,11 @@
 }
 
 @media (min-width: 992px) {
- 
+
   .contact-text {
     width: 60%;
   }
+
   .contact-form {
     width: 50%;
   }
@@ -291,24 +343,28 @@
     flex-wrap: nowrap;
     flex-direction: column-reverse;
   }
+
   .home-sci span {
     font-size: 2rem;
     margin-bottom: 0;
   }
+
   .mypic img {
     /* margin: 15rem; */
     max-width: 30rem;
     max-height: 30rem;
     margin-top: 10rem;
     margin-bottom: 2rem;
-    
+
   }
-  button{
+
+  button {
     align-items: center;
     height: 4rem;
     font-size: 1.3rem;
-    
+
   }
+
   .about {
     display: flex;
     flex-wrap: wrap;
@@ -317,6 +373,7 @@
     margin: 0;
     padding: 0;
   }
+
   .about-text {
     margin-left: 2rem;
     margin-right: 0em;
@@ -325,10 +382,12 @@
     /* padding-right: 2rem; */
     text-align: justify;
   }
-  .about-img img{
+
+  .about-img img {
     align-items: center;
-   
+
   }
+
   .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -336,85 +395,128 @@
     padding: 0;
     margin: 0;
   }
+
   .proj-list-container {
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
   }
-  .proj-img { 
+
+  .proj-img {
     margin: 0;
     padding: 0;
     margin-bottom: 2rem;
   }
+
   .overlay {
     bottom: 0;
   }
+
   .proj-name {
     font-size: 1.5rem;
   }
+
   .sub-title {
     font-size: 3rem;
     margin-top: 5rem;
   }
- 
+
   .contact-text,
   .contact-form {
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  .service{
+
+  .service {
     margin: 0;
     padding: 0;
   }
- .container{
+
+  .container {
     margin: 0;
     padding: 0;
     padding-left: 4rem;
     padding-right: 4rem;
 
-    
+
   }
-  .contact{
+
+  .contact {
     align-items: center;
     /* margin: 0; */
-    padding-left: 5rem;  
+    padding-left: 5rem;
     justify-content: center;
 
   }
-  .copyright{
+
+  .copyright {
     font-size: 1.5rem;
   }
-  section{
+
+  section {
     margin: 0;
     padding: 0;
   }
 }
+
 @media screen and (max-width: 496px) {
   .home {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column-reverse;
   }
+
   .home-sci span {
     font-size: 2rem;
     margin-bottom: 0;
   }
+
+  .home-content h1 {
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 3rem;
+      width: 3rem;
+      z-index: 100;
+    }
+
+    div {
+      position: relative;
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+      /* margin: 0 0.2rem; */
+      border-radius: 10px;
+      box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+        4px 4px 6px rgba(0, 0, 0, 0.2),
+        inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+        inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+
   .mypic img {
     /* margin: 15rem; */
     max-width: 30rem;
     max-height: 30rem;
     margin-top: 10rem;
     margin-bottom: 2rem;
-    
+
   }
-  button{
+
+  button {
     align-items: center;
     height: 4rem;
     font-size: 1.3rem;
-    
+
   }
+
   .about {
     display: flex;
     flex-wrap: wrap;
@@ -423,6 +525,7 @@
     margin: 0;
     padding: 0;
   }
+
   .about-text {
     margin-left: 2rem;
     margin-right: 0em;
@@ -431,10 +534,12 @@
     /* padding-right: 2rem; */
     text-align: justify;
   }
-  .about-img img{
+
+  .about-img img {
     align-items: center;
-   
+
   }
+
   .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -442,57 +547,67 @@
     padding: 0;
     margin: 0;
   }
+
   .proj-list-container {
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
   }
-  .proj-img { 
+
+  .proj-img {
     margin: 0;
     padding: 0;
     margin-bottom: 2rem;
   }
+
   .overlay {
     bottom: 0;
   }
+
   .proj-name {
     font-size: 1.5rem;
   }
+
   .sub-title {
     font-size: 3rem;
     margin-top: 5rem;
   }
- 
+
   .contact-text,
   .contact-form {
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  .service{
+
+  .service {
     margin: 0;
     padding: 0;
   }
- .container{
+
+  .container {
     margin: 0;
     padding: 0;
     padding-left: 4rem;
     padding-right: 4rem;
 
-    
+
   }
-  .contact{
+
+  .contact {
     align-items: center;
     /* margin: 0; */
-    padding-left: 5rem;  
+    padding-left: 5rem;
     justify-content: center;
 
   }
-  .copyright{
+
+  .copyright {
     font-size: 1.5rem;
   }
-  section{
+
+  section {
     margin: 0;
     padding: 0;
   }

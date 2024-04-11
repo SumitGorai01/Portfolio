@@ -321,21 +321,21 @@ button:hover {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
     z-index: 100;
   }
 
   div {
     position: relative;
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 3.5rem;
     cursor: pointer;
-    margin: 0 2px;
+    margin: 0 0.2rem;
     border-radius: 10px;
     box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
       4px 4px 6px rgba(0, 0, 0, 0.2),
@@ -1052,19 +1052,7 @@ form textarea {
 }
 
 
-.top {
-  position: fixed;
-  bottom: 3.1rem;
-  right: 1.1rem;
-}
 
-.top i {
-  color: #ffffff;
-  background: #0ef;
-  font-size: 2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
 
 /*image hover*/
 .mypic img {
@@ -1139,4 +1127,24 @@ section {
 .project {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+
+.bottom-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: aqua;
+  color: rgb(2, 2, 2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 45px;
+}
+
+.bottom-to-top i {
+  font-size: 20px;
 }
