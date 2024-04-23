@@ -44,7 +44,7 @@
 
   .skill-content {
     grid-column-gap: 0px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
   }
 }
 
@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 787px) {
   .skills {
-    height: 1100px;
+    height: 900px;
   }
 
   .skills .skill-content {
@@ -338,6 +338,9 @@
 
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 576px) {
+  .sticky-icon{
+    display: none;
+  }
   .home {
     display: flex;
     flex-wrap: nowrap;
