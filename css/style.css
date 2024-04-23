@@ -6,13 +6,14 @@
   font-family: 'poppins', sans-serif;
 }
 
-html {
+/* html {
   font-size: 62.5%;
-}
+} */
 
 body {
   background-color: #081b29;
   color: #ededed;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -20,7 +21,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.8rem 10%;
+  padding: 8px 10%;
   background: #051125;
   display: flex;
   justify-content: space-between;
@@ -35,7 +36,7 @@ body {
 
 .nav>.nav-header>.nav-title {
   position: relative;
-  font-size: 3rem;
+  font-size: 30px;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -47,16 +48,16 @@ body {
 .nav>.nav-header>.nav-title span {
   color: cyan;
   font-weight: bold;
-  font-size: 4rem;
-  padding-right: 0.5rem;
-  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  font-size: 40px;
+  padding-right: 5px;
+  /* text-shadow: 0 0 15px yellow, 0 0 25px yellow; */
 
 }
 
 .nav>.nav-header>.nav-title span :hover {
   color: cyan;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 40px;
 }
 
 .nav>.nav-btn {
@@ -66,22 +67,22 @@ body {
 .nav>.nav-links {
   display: inline;
   float: right;
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .nav-links :hover {
   color: #0ef;
-  border-bottom: 0.1rem solid white;
+  border-bottom: 1px solid white;
   transition: 0.3s;
 }
 
 .nav-links>a {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 25px;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-right: 2rem;
+  margin-right: 20px;
   transition: 0.3s;
   opacity: 0;
   animation: slideTop .5s ease forwards;
@@ -106,9 +107,9 @@ body {
 
   .nav>.nav-btn>label {
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    padding: 1.3rem;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
 
   .nav>.nav-btn>label:hover,
@@ -118,9 +119,8 @@ body {
 
   .nav>.nav-btn>label>span {
     display: block;
-    width: 2.5rem;
-    height: 1rem;
-
+    width: 30px;
+    height: 10px;
     border-top: 2px solid #eee;
   }
 
@@ -132,14 +132,14 @@ body {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 5rem;
+    top: 50px;
     left: 0px;
   }
 
   .nav>.nav-links>a {
     display: block;
     width: 100%;
-    padding: 2rem;
+    padding: 20px;
   }
 
   .nav>#nav-check:not(:checked)~.nav-links {
@@ -149,7 +149,7 @@ body {
   .nav>#nav-check:checked~.nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
-    padding: 5rem;
+    padding: 50px;
   }
 }
 
@@ -163,41 +163,42 @@ body {
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 5rem 7% 0;
+  /* justify-content: center; */
+  padding: 50px 7% 0;
   color: white;
 }
 
 .home-content {
-  max-width: 60rem;
+  max-width: 600px;
 }
 
 .home-content h3 {
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: 700;
-  margin-top: .5rem;
+  margin-top: 5px;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: .7s;
 }
 
 .home-content h3:nth-of-type(2) {
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
   animation: slideTop 1s ease forwards;
   animation-delay: 0.7s;
 }
 
 .home-content h1 {
-  font-size: 5.6rem;
+  font-size: 56px;
   font-weight: 700;
-  margin: -0.3rem 0;
-  margin-top: 2rem;
+  margin: 30px 0px 30px 0;
+  margin-top: 20px;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
 }
 
 .home-content p {
-  font-size: 2rem;
+  font-size: 20px;
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1s;
@@ -206,6 +207,7 @@ body {
 .home-content h3 span {
   color: #0ef;
 }
+
 .home .mypic {
   height: 100vh;
   width: auto;
@@ -217,38 +219,38 @@ body {
   animation-delay: calc(.2s * var(--i));
 }
 
-
 .home .mypic img {
-  margin-top: 8rem;
+  margin-top: 80px;
   width: 100%;
   height: 60%;
   border-radius: 50%;
   box-shadow: 0px 0px 50px aqua, 2px 2px 5px aqua, 2px 2px 5px aqua,
     0px 20px 50px aqua;
   z-index: 2;
+  
 }
 
 .home-content .email {
-  font-size: 1.8rem;
+  font-size: 20px;
   font-weight: bold;
-  margin-top: 2rem;
-  margin-bottom: 6rem;
+  margin-top: 40px;
+  margin-bottom: 60px;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
 }
 
 .home-content .btns {
-  margin-top: 1rem;
+  margin-top: 50px;
   width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
 button {
-  width: 16rem;
-  height: 5rem;
-  font-size: 1.5rem;
+  width: 160px;
+  height: 50px;
+  font-size: 15px;
   font-weight: bold;
   color: aqua;
   background-color: transparent;
@@ -262,27 +264,26 @@ button {
   animation-delay: calc(.3s * var(--i));
 }
 
-
 button:hover {
   background-color: aqua;
   color: black;
   border-radius: 30px;
-  box-shadow: 0px 0px 5px aqua, 0px 0px 50px aqua;
+  box-shadow: 0px 0px 50px aqua, 0px 0px 50px aqua;
 }
 
 .home-sci a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 45px;
+  height: 45px;
   background: transparent;
   border: 2px solid #0ef;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 20px;
   color: #0ef;
   text-decoration: none;
-  margin: 2rem 1.5rem 3rem 1rem;
+  margin: 50px 15px 30px 10px;
   transition: 0.3s;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
@@ -291,11 +292,11 @@ button:hover {
 
 .home-sci a :hover {
   color: white;
-  box-shadow: 2px 2px 80px rgb(213, 236, 4);
+  box-shadow: 20px 20px 80px rgb(229, 255, 0);
 }
 
 .mypic span {
-  font-size: 3rem;
+  font-size: 30px;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
@@ -320,27 +321,27 @@ button:hover {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 5rem;
-    width: 5rem;
+    height: 500px;
+    width: 500px;
     z-index: 100;
   }
 
-  div {
+  /* div {
     position: relative;
-    height: 5rem;
-    width: 5rem;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.5rem;
+    font-size: 35px;
     cursor: pointer;
-    margin: 0 0.2rem;
+    margin: 0 2px;
     border-radius: 10px;
     box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
       4px 4px 6px rgba(0, 0, 0, 0.2),
       inset -1px -1px 4px rgba(255, 255, 255, 0.05),
       inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  }
+  } */
 
   input[type="checkbox"]:checked~div {
     box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
@@ -368,14 +369,15 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 1rem;
-  margin-right: 8rem;
+  gap: 10px;
+  margin: 0 80px;
 }
 
 .about-img img {
-  margin-left: 10rem;
-  max-width: 63rem;
-  width: 60%;
+  margin-right: 150px;
+  float: right;
+  max-width: 630px;
+  width: 50%;
   height: auto;
   border-radius: 5%;
   box-shadow: 0px 0px 50px aqua, 2px 2px 5px aqua, 2px 2px 5px aqua,
@@ -387,7 +389,7 @@ button:hover {
 }
 
 .about-text h2 {
-  font-size: 6rem;
+  font-size: 60px;
 }
 
 .about-text h2 span {
@@ -395,23 +397,27 @@ button:hover {
 }
 
 .about-text h4 {
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 600;
   color: white;
   line-height: 1.7;
-  margin: 1.5rem 0 2.5rem;
+  margin: 15px 0 25px;
 }
 
 .about-text p {
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 2rem;
-  margin-right: 5rem;
+  margin-bottom: 30px;
+  margin-right: 50px;
 }
 
 .about-text {
   text-align: justify;
+}
+
+#more {
+  display: none;
 }
 
 /* about us */
@@ -419,15 +425,15 @@ button:hover {
 /* service */
 #services {
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 20px;
   line-height: 1.4;
 }
 
 .sub-title {
   text-align: center;
-  font-size: 6rem;
-  margin-bottom: 8rem;
-  margin-top: 5rem;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 
 }
 
@@ -436,21 +442,21 @@ button:hover {
 }
 
 .container {
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 40px;
 }
 
 .services-list div {
   background-color: transparent;
-  padding: 4rem;
-  font-size: 1.3rem;
-  font-weight: 1.3rem;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
   border-radius: 20px;
   transition: backgroung 0.5s, transform 0.5;
   box-shadow: 1px 1px 20px #012290f7,
@@ -458,14 +464,14 @@ button:hover {
 }
 
 .services-list div i {
-  font-size: 5rem;
-  margin-bottom: 3rem;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .services-list div h2 {
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
 
 }
 
@@ -474,17 +480,17 @@ button:hover {
   color: #000000;
   font-size: 13px;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 
 .read a {
   display: inline-block;
-  padding: 1.2rem 2.8rem;
+  padding: 12px 28px;
   background: #0ef;
   border-radius: 40px;
-  font-size: 1.5rem;
+  font-size: 15px;
   color: #081b29;
-  letter-spacing: .1rem;
+  letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
@@ -509,16 +515,16 @@ button:hover {
 
 .project {
   text-align: center;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .proj-list-container {
   /* max-width: 1000px; */
   margin: auto;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 4rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -529,14 +535,14 @@ button:hover {
   -webkit-overflow-scrolling: touch;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 20px;
 }
 
 .proj-img {
   border: 2px solid white;
   border-radius: 10px;
-  height: 20rem;
-  width: calc(100% / 3.06);
+  height: 200px;
+  width: calc(100% / 3.10);
   background-color: white;
   flex-shrink: 0;
   position: relative;
@@ -577,15 +583,15 @@ button:hover {
 }
 
 .overlay-icon {
-  height: 5rem;
-  width: 5rem;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid aqua;
   border-radius: 50%;
-  box-shadow: 0 0 1rem aqua;
-  font-size: 1.5rem;
+  box-shadow: 0 0 10px aqua;
+  font-size: 15px;
 }
 
 .overlay-icon i {
@@ -593,7 +599,7 @@ button:hover {
 }
 
 .proj-name {
-  margin-top: 1.5rem;
+  margin-top: 15px;
   color: white;
   font-weight: 500;
 }
@@ -605,6 +611,7 @@ button:hover {
 .overlay-icon:hover {
   box-shadow: 0px 0px 40px aqua;
 }
+
 /*project*/
 
 /* skills */
@@ -612,8 +619,8 @@ button:hover {
   height: 100vh;
   text-align: center;
   color: white;
-  /* margin-top: 1rem; */
-  margin-bottom: 5rem;
+  /* margin-top: 1px; */
+  /* margin-bottom: 3px; */
 }
 
 .skill-content {
@@ -621,24 +628,24 @@ button:hover {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 1rem;
-  grid-column-gap: 1rem;
+  grid-row-gap: 1px;
+  grid-column-gap: 1px;
 }
 
 .skill-bar {
-  margin: 0 5rem 2.2rem 8rem;
+  margin: 0 50px 22px 80px;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .skill-bar .bar {
   width: 100%;
-  height: 1rem;
-  margin-top: 1rem;
+  height: 10px;
+  margin-top: 10px;
   border-radius: 25px;
   background-color: #000000;
   position: relative;
@@ -719,43 +726,43 @@ button:hover {
 }
 
 .prof .prof-skills {
-  grid-row-gap: 1rem;
-  grid-column-gap: 1rem;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
   width: 80%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 7rem;
+  margin: 70px;
 }
 
 .prof .outer-circle {
-  width: 12rem;
-  height: 12rem;
-  margin: 1rem;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
   border-radius: 50%;
   position: relative;
   background-color: aqua;
   border: 1px solid aqua;
   box-shadow: 0px 0px 15px aqua;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
 .prof .inner-circle {
-  width: 10rem;
-  height: 10rem;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #171617;
   border-radius: 50%;
-  margin: 1rem;
+  margin: 10px;
   position: relative;
 }
 
 .skill-name {
-  font-size: 1.3rem;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   z-index: 4;
@@ -765,8 +772,8 @@ button:hover {
 
 .prof .box {
   position: absolute;
-  height: 6rem;
-  width: 6rem;
+  height: 60px;
+  width: 60px;
   background-color: #171617;
   animation-play-state: paused;
 }
@@ -784,21 +791,21 @@ button:hover {
 
 .box-bottom-left {
   left: 0;
-  top: 6rem;
+  top: 60px;
   transform-origin: 100% 0;
   animation: show-bottom-left 0.5s linear 0.5s forwards;
 }
 
 .box-top-right {
-  left: 6rem;
+  left: 60px;
   top: 0;
   transform-origin: 0 100%;
   animation: show-top-right 0.5s linear 1.5s forwards;
 }
 
 .box-bottom-right {
-  left: 6rem;
-  top: 6rem;
+  left: 60px;
+  top: 60px;
   transform-origin: 0 0;
   animation: show-bottom-right 0.5s linear 1s forwards;
 }
@@ -809,8 +816,8 @@ button:hover {
   }
 
   99.9% {
-    height: 6rem;
-    width: 6rem;
+    height: 60px;
+    width: 60px;
   }
 
   100% {
@@ -826,8 +833,8 @@ button:hover {
   }
 
   99.9% {
-    height: 6rem;
-    width: 6rem;
+    height: 60px;
+    width: 60px;
   }
 
   100% {
@@ -843,8 +850,8 @@ button:hover {
   }
 
   99.9% {
-    height: 6rem;
-    width: 6rem;
+    height: 60px;
+    width: 60px;
   }
 
   100% {
@@ -860,8 +867,8 @@ button:hover {
   }
 
   99.9% {
-    height: 6rem;
-    width: 6rem;
+    height: 60px;
+    width: 60px;
   }
 
   100% {
@@ -870,6 +877,7 @@ button:hover {
     transform: skewY(-90deg);
   }
 }
+
 /* skills */
 
 /* contact */
@@ -877,42 +885,42 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 3rem;
-  padding-left: 8rem;
-  padding-right: 5rem;
-  margin-bottom: 3rem;
+  gap: 30px;
+  padding-left: 80px;
+  padding-right: 50px;
+  margin-bottom: 30px;
 }
 
 .contact-text h4 {
-  margin: 1.5rem 0;
+  margin: 15px 0;
   color: rgb(224, 236, 236);
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .contact-text p {
   color: rgb(177, 177, 177);
-  font-size: 2rem;
-  line-height: 3rem;
-  margin-bottom: 2rem;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-list {
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
 }
 
 .contact-list li {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   display: block;
-  padding-right: 1rem;
-  font-size: 2rem;
+  padding-right: 10px;
+  font-size: 20px;
 }
 
 .contact-list li i {
   display: inline-block;
-  padding-right: 2rem;
+  padding-right: 20px;
   color: #0ef;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 600;
   transition: all .4s ease;
 }
@@ -926,16 +934,16 @@ button:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background: transparent;
   border: 2px solid #0ef;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 20px;
   color: #0ef;
   text-decoration: none;
   ;
-  margin: 1rem 1rem 3rem 0;
+  margin: 10px 10px 30px 0;
   transition: .5s ease;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
@@ -957,12 +965,12 @@ form textarea {
   border: none;
   outline: none;
   width: 90%;
-  padding: 1.8rem;
+  padding: 18px;
   background: rgb(229, 220, 220);
   color: #000;
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  border-radius: 0.5rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
   border: 2px solid #0ef;
   transition: 0.3s;
   opacity: 0;
@@ -972,8 +980,8 @@ form textarea {
 
 .contact-form .btns button {
   width: 90%;
-  margin-top: .5rem;
-  margin-bottom: 1rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
   transition: 0.3s;
   opacity: 0;
   animation: slideLeft .5s ease forwards;
@@ -985,9 +993,9 @@ form textarea {
 /*footer*/
 .copyright {
   text-align: center;
-  font-size: 2rem;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: auto;
   animation: slideTop 1s ease forwards;
 }
@@ -1000,6 +1008,7 @@ form textarea {
 .copyright span {
   color: red;
 }
+
 /*footer*/
 
 @keyframes slideLeft {
@@ -1052,32 +1061,32 @@ form textarea {
 
 
 
-
 /*image hover*/
 .mypic img {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 1rem auto;
+  margin: 10px auto;
   background: white;
   border-radius: 75px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: lighter;
-  letter-spacing: 2rem;
+  letter-spacing: 2px;
   transition: 1s box-shadow;
 }
 
 .mypic img:hover {
   box-shadow: 0px 0px 50px rgb(244, 248, 0), 2px 2px 5px rgb(230, 0, 255), 2px 2px 5px white,
     0px 20px 50px rgb(47, 254, 1);
+    
 }
 
 .sub-title span {
   cursor: pointer;
   position: relative;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   transition: all 1s;
@@ -1085,22 +1094,22 @@ form textarea {
   &:after,
   &:before {
     content: " ";
-    width: 1rem;
+    width: 5px;
     position: absolute;
     border: 0px solid #fff;
     transition: all 1s;
   }
 
   &:after {
-    top: 1px;
-    left: 1px;
+    top: 5px;
+    left: 5px;
     border-top: 5px solid #fff;
     border-left: 5px solid #fff;
   }
 
   &:before {
-    bottom: 1px;
-    right: 1px;
+    bottom: 0px;
+    right: 0px;
     border-bottom: 5px solid #fff;
     border-right: 5px solid #fff;
   }
@@ -1119,21 +1128,20 @@ form textarea {
 }
 
 section {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.project {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
+/* .project {
+  margin-top: 30px;
+  margin-bottom: 30px;
+} */
 
 .bottom-to-top {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   background-color: aqua;
   color: rgb(2, 2, 2);
   width: 40px;
@@ -1148,5 +1156,99 @@ section {
   font-size: 20px;
 }
 
+.sticky-icon {
+  z-index: 1;
+  position: fixed;
+  top:30%;
+  right: 0%;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  /* opacity: 0.5; */
+}
+
+.sticky-icon a {
+  transform: translate(160px, 0px);
+  border-radius: 50px 0px 0px 50px;
+  text-align: left;
+  margin: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  transition: all 0.8s;
+}
+
+.sticky-icon a:hover {
+  color: #FFF;
+  transform: translate(0px, 0px);
+}
+
+.sticky-icon a:hover i {
+  transform: rotate(360deg);
+}
+
+.Facebook {
+  background-color: #2C80D3;
+  color: #FFF;
+}
+
+.Youtube {
+  background-color: #fa0910;
+  color: #FFF;
+}
+
+.Whatsapp {
+  background-color: #11bc36;
+  color: #FFF;
+}
+
+.Github {
+  background-color: #524242;
+  color: #FFF;
+}
+
+.LinkedIn {
+  background-color: #106fcd;
+  color: #FFF;
+}
+
+.sticky-icon a i {
+  background-color: #FFF;
+  height: 40px;
+  width: 40px;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+
+.sticky-icon a i.fa-facebook-f {
+  background-color: #FFF;
+  color: #2C80D3;
+}
+
+.sticky-icon a i.fa-linkedin-in {
+  background-color: #FFF;
+  color: #0c75ed;
+}
+
+.sticky-icon a i.fa-github {
+  background-color: #FFF;
+  color: #230606;
+}
+
+.sticky-icon a i.fa-youtube {
+  background-color: #FFF;
+  color: #fa0910;
+}
+
+.sticky-icon a i.fa-whatsapp {
+  background-color: #FFF;
+  color: #08a40d;
+}
 
 
