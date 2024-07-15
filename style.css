@@ -76,12 +76,41 @@ body {
   float: right;
   font-size: 1.8rem;
 }
-
-.nav-links a:hover {
+/* .nav-links a:hover {
   color: #0ef;
   border-bottom: 1px solid white;
-  transition: 0.3s;
+  transition: 1s;
+} */
+.nav-links a{
+  font-family: arial;
+  color: #8BE3F3;
+  text-decoration: none;
+  /* position: relative; */
+  /* padding: 15px 10px; */
+  font-size: 18px;
+  /* display: block; */
+  margin-left: 1rem;
+  /* list-style: none; */
+  /* display: inline-block; */
+/* margin-left: 50px; */
 }
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #FEFEFE;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+}
+.nav-links a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
 
 .nav-links>a {
   display: inline-block;
@@ -415,17 +444,23 @@ button:hover {
 
 .animated-text {
   color: aqua;
-  position: absolute;
-  left: 42%;
+  /* position: absolute; */
+  /* left: 42%; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   transform: translateX(-50%);
   animation: slideBottom 1.5s forwards;
   animation-play-state: paused;
 }
 
-.skills:hover .animated-text {
+.skills :hover .animated-text {
   animation-play-state: running;
 }
+/* .project :hover .animated-text {
+  animation-play-state: running;
+} */
 
 @keyframes slideIn {
   to {
@@ -766,6 +801,7 @@ button:hover {
 .proj-name {
   margin-top: 1.5rem;
   color: white;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -1127,3 +1163,4 @@ form textarea {
 
 
 /* my pic */
+
