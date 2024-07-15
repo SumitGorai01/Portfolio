@@ -339,6 +339,9 @@
 }
 
 @media screen and (max-width: 401px) {
+  .home{
+    margin-top: 3rem;
+  }
   .home .home-content .text-2 {
     font-size: 2.3rem;
   }
