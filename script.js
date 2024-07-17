@@ -1,5 +1,5 @@
 var typed = new Typed(".sec-text", {
-    strings: ["BCA Graduate","Java Developer", "Backend Developer", "Software Engineer", "Web Developer"],
+    strings: ["BCA Graduate", "Java Developer", "Backend Developer", "Software Engineer", "Web Developer"],
     typSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -81,31 +81,31 @@ function sendEmail() {
         Username: "goraisumit01@gmail.com",
         Password: "68F730BD7F008A0DC76C37C5F363DCDA6B71",
         To: 'goraisumit01@gmail.com',
-        From:'goraisumit01@gmail.com',
+        From: 'goraisumit01@gmail.com',
         Subject: "From Protfolio ",
-        Body: "Name : "+document.getElementById("name").value
-                    +"<br> Email : " +document.getElementById("email").value
-                    +"<br> Subject : " +document.getElementById("subject").value
-                    +"<br> Message : " +document.getElementById("message").value
-                    
+        Body: "Name : " + document.getElementById("name").value
+            + "<br> Email : " + document.getElementById("email").value
+            + "<br> Subject : " + document.getElementById("subject").value
+            + "<br> Message : " + document.getElementById("message").value
+
     }).then(
-        message =>{
-            if(message == 'OK'){
+        message => {
+            if (message == 'OK') {
                 Swal.fire({
                     title: "Success",
                     text: "Message Sent Successfully",
                     icon: "success",
-                    showConfirmButton: true,  
+                    showConfirmButton: true,
                     timer: 3000
-                  });
-            }else{
+                });
+            } else {
                 Swal.fire({
                     icon: "error",
                     title: "Oops...",
                     text: "Something went wrong!",
                     showConfirmButton: false,
-                    timer: 3000                    
-                  });
+                    timer: 3000
+                });
             }
         }
     );
@@ -116,26 +116,32 @@ function collapseNavbar() {
     checkBox.checked = false;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var bottomToTopBtn = document.getElementById('bottomToTopBtn');
-  
-    window.addEventListener('scroll', function() {
-      if (window.pageYOffset > 100) {
-        bottomToTopBtn.style.display = 'block';
-      } else {
-        bottomToTopBtn.style.display = 'none';
-      }
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+            bottomToTopBtn.style.display = 'block';
+        } else {
+            bottomToTopBtn.style.display = 'none';
+        }
     });
-  
-    bottomToTopBtn.addEventListener('click', function() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+
+    bottomToTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
-  });
+});
 
 
-  var counterContainer = document.querySelector(".website-counter");
-var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
+document.addEventListener("contextmenu",function(event){
+    event.preventDefault();
+    // alert("hi")
+},false);
+
+
+setTimeout(function a(){
+    document.getElementById("loading").style.display="none";
+}, 4000);

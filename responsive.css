@@ -127,7 +127,7 @@
 }
 
 @media screen and (max-width: 787px) {
-  
+
   /* .nav-bar .nav-list {
     width: 60%;
   } */
@@ -181,13 +181,15 @@
   .nav-bar .nav-list {
     display: none;
   }
-  .skills{
+
+  .skills {
     height: 1250px;
   }
 
   .proj-img {
     width: calc(100% / 1);
   }
+
   .sub-title {
     margin: 0;
     padding: 0;
@@ -195,7 +197,8 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-  .contact{
+
+  .contact {
     display: flex;
     flex-direction: column;
     /* align-items: center;
@@ -229,6 +232,7 @@
   .skills {
     height: 1700px;
   }
+
   .sub-title {
     margin: 0;
     padding: 0;
@@ -236,7 +240,8 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-  .contact{
+
+  .contact {
     display: flex;
     flex-direction: column;
     /* align-items: center;
@@ -273,10 +278,12 @@
   h1 {
     font-size: 1.6rem;
   }
-  .skills{
+
+  .skills {
     margin: 0;
     height: 1150px;
   }
+
   .skills .skill-content {
     margin-top: 2rem;
   }
@@ -320,6 +327,7 @@
     width: 300px;
     /* margin: 0; */
   }
+
   .sub-title {
     margin: 0;
     padding: 0;
@@ -327,7 +335,8 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-  .contact{
+
+  .contact {
     display: flex;
     flex-direction: column;
     /* align-items: center;
@@ -336,16 +345,23 @@
     padding: 0;
     margin-right: 0;
   }
-  .certificate{
+
+  .certificate {
     margin: 0;
+  }
+  .certificate .container img {
+    animation-play-state: running;
+  }
+  .contact-icons a {
+    animation-play-state: running;
   }
 }
 
 @media screen and (max-width: 401px) {
-  .home{
+  .home {
     margin-top: 3rem;
   }
- 
+
   .home .home-content .text-2 {
     font-size: 2.3rem;
   }
@@ -375,6 +391,7 @@
     height: 1500px;
     margin: 0;
   }
+
   .sub-title {
     margin: 0;
     padding: 0;
@@ -382,7 +399,8 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-  .contact{
+
+  .contact {
     display: flex;
     flex-direction: column;
     /* align-items: center;
@@ -455,7 +473,8 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-  .contact{
+
+  .contact {
     display: flex;
     flex-direction: column;
     /* align-items: center; */

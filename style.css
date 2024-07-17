@@ -52,6 +52,7 @@ body {
   font-weight: 600;
   opacity: 0;
   animation: slideRight 1s ease forwards;
+  animation-delay: 4s;
 }
 
 .nav>.nav-header>.nav-title span {
@@ -122,7 +123,8 @@ body {
   transition: 0.3s;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: calc(4s + 0.2s * var(--i));
+  
 }
 
 .nav>#nav-check {
@@ -222,7 +224,7 @@ body {
   transition: 0.3s;
   opacity: 0;
   animation: grow 1s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 4s;
   
 }
 
@@ -344,7 +346,8 @@ button:hover {
   transition: 0.3s;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
-  animation-delay: 1s;
+  animation-delay: calc(4s + 0.3s * var(--i));
+  /* animation-delay: 4s; */
 }
 
 .social-icons a :hover {
@@ -893,11 +896,11 @@ button:hover {
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* align-items: center; */
   gap: 3rem;
   margin-left: 6rem;
-  /* padding-right: 50px; */
   margin-right: 5rem;
+  /* align-items: center; */
+  /* padding-right: 50px; */
   /* margin: 1rem; */
   /* padding: 1rem; */
 }
@@ -959,9 +962,12 @@ button:hover {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(.2s * var(--i));
+  animation-play-state: paused;
 
 }
-
+.contact :hover .contact-icons a  {
+  animation-play-state: running;
+}
 .contact-icons a :hover {
   color: white;
   box-shadow: 2px 2px 80px rgb(224, 236, 236);
@@ -989,7 +995,10 @@ form textarea {
   animation-delay: calc(.2s * var(--i));
   /* animation-play-state: paused; */
 }
-
+/* .contact :hover input
+ textarea  {
+  animation-play-state: running;
+} */
 .contact-form .btns button {
   width: 90%;
   margin-top: 0.5rem;
@@ -1195,3 +1204,13 @@ form textarea {
 
 /* my pic */
 
+#loading{
+  position:fixed;
+  width:100%;
+  height:100vh;
+  background:#081b29
+  url('./assets/Hourglass.gif')
+  no-repeat center ;
+  z-index:99999;
+ 
+}
