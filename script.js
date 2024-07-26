@@ -136,12 +136,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("contextmenu",function(event){
+document.addEventListener("contextmenu", function (event) {
     event.preventDefault();
     // alert("hi")
-},false);
+}, false);
 
 
-setTimeout(function a(){
-    document.getElementById("loading").style.display="none";
+setTimeout(function a() {
+    document.getElementById("loading").style.display = "none";
 }, 4000);
+
+
+// darkModeToggle.addEventListener("change", function () {
+//     body.classList.toggle('dark-mode');
+//     if (body.classList.contains('dark-mode')) {
+//         darkModeToggle.textContent = 'Turn on Light Mode';
+//     } else {
+//         darkModeToggle.textContent = 'Turn on Dark Mode';
+//     }
+// });

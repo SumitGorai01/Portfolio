@@ -255,7 +255,7 @@ body {
 }
 
 .home-content .text-3 .sec-text {
-  color: rgb(15, 214, 187);
+  color:aqua;
   font-weight: bold;
   font-size: 2.4rem;
 }
@@ -316,6 +316,7 @@ button:hover {
   color: black;
   transition: 0.8s;
   box-shadow: 0px 0px 5px aqua, 0px 0px 50px aqua;
+  /* border-radius: 45px; */
 }
 
 .follow-text {
@@ -1039,7 +1040,7 @@ form textarea {
 .bottom-to-top {
   display: none;
   position: fixed;
-  bottom: 2rem;
+  bottom: 1.5rem;
   right: 1rem;
   background-color: aqua;
   color: rgb(12, 9, 9);
@@ -1049,10 +1050,51 @@ form textarea {
   cursor: pointer;
   text-align: center;
   line-height: 1.8rem;
+  transition: background-color 0.8s ease;
+  animation:slideLeft 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .bottom-to-top i {
   font-size: 20px;
+  animation: jumpToTop 0.8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+ @keyframes jumpToTop {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* .bottom-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+  animation: jumpToTop 0.8s ease-in-out infinite;
+} */
+
+.bottom-to-top:hover {
+  background-color: #0056b3;
+  color: white;
+  transition: .5s ;
+}
+
+.bottom-to-top i {
+  font-size: 1rem;
+  text-align: center;
 }
 
 /*top to bottom*/
