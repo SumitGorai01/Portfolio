@@ -249,6 +249,11 @@
     margin: 1.3rem;
     padding: 0;
     margin-right: 0;
+
+  }
+  .certificate{
+    margin: 2rem;
+    padding: 2rem;
   }
 }
 

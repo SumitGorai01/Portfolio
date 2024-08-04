@@ -315,6 +315,7 @@ button:hover {
   background-color: aqua;
   color: black;
   transition: 0.8s;
+  border-radius: 30px;
   box-shadow: 0px 0px 5px aqua, 0px 0px 50px aqua;
   /* border-radius: 45px; */
 }
@@ -422,13 +423,14 @@ button:hover {
 
 .about .about-image {
   width: 30%;
+
   /* Adjusted width */
 }
 
 /* Add this style to make the image responsive */
 .about .about-image img {
   width: 100%;
-  height: auto;
+  height: 80%;
 }
 
 /* skills section */
@@ -879,7 +881,19 @@ button:hover {
   display: block;
   transition: transform 0.5s;
   opacity: 0;
+  /* animation: slideLeft .8s ease forwards; */
+  /* animation-play-state: paused; */
+  /* animation-delay: calc(.5s * var(--i)); */
+}
+
+.certificate .container img:nth-child(odd) {
   animation: slideLeft .8s ease forwards;
+  animation-play-state: paused;
+  animation-delay: calc(.5s * var(--i));
+}
+
+.certificate .container img:nth-child(even) {
+  animation: slideRight .8s ease forwards;
   animation-play-state: paused;
   animation-delay: calc(.5s * var(--i));
 }
@@ -989,7 +1003,7 @@ form textarea {
   font-weight: 600;
   margin-bottom: 0.5rem;
   border-radius: 5px;
-  border: 2px solid #0ef;
+  border: 4px solid #0ef;
   transition: 0.3s;
   opacity: 0;
   animation: slideLeft .5s ease forwards;
@@ -1256,3 +1270,50 @@ form textarea {
   z-index:99999;
  
 }
+
+#certificateContainer {
+  min-height: 0;
+  max-height: 0; /* Adjust this value as needed */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#certificateContainer.expanded {
+  max-height: 100vh; /* Adjust this value as needed */
+}
+/* 
+
+
+#readMoreBtn:hover {
+  background-color: #0056b3;
+} */
+#readMoreBtn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  /* background-color: #007BFF; */
+  /* color: white; */
+  border: none;
+  cursor: pointer;
+}
+
+/* .moving-hr {
+  width: 60%;
+  margin: 20px auto;
+  border: none;
+  border-top: 2px solid aqua;
+  position: relative;
+  animation: moveHr 5s linear infinite;
+}
+
+@keyframes moveHr {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */

@@ -155,3 +155,15 @@ setTimeout(function a() {
 //         darkModeToggle.textContent = 'Turn on Dark Mode';
 //     }
 // });
+
+document.getElementById('readMoreBtn').addEventListener('click', function() {
+    var container = document.getElementById('certificateContainer');
+    if (container.classList.contains('expanded')) {
+      container.classList.remove('expanded');
+      this.textContent = 'Read More';
+    } else {
+      container.classList.add('expanded');
+      this.textContent = 'Read Less';
+    }
+  });
+  
