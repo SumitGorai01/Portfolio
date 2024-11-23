@@ -136,10 +136,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("contextmenu", function (event) {
-    event.preventDefault();
-    // alert("hi")
-}, false);
+// document.addEventListener("contextmenu", function (event) {
+//     event.preventDefault();
+//     // alert("hi")
+// }, false);
 
 
 setTimeout(function a() {

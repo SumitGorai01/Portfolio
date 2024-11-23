@@ -207,6 +207,9 @@
     padding: 1rem;
     margin-right: 0;
   }
+  .certificate .container img {
+     animation-play-state: running;
+  }
 
 }
 
@@ -255,6 +258,7 @@
     margin: 2rem;
     padding: 2rem;
   }
+  
 }
 
 @media screen and (max-width: 528px) {
